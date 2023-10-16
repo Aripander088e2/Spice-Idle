@@ -4,13 +4,13 @@ let delta_time = undefined
 //game operations run every tick
 function tick() {
     let reward_scaling = 1
-    if (game.antispice_bought[1]) reward_scaling = 1.05
+    if (game.antispice_bought[1]) reward_scaling = 1.15
     if (game.collapse_challenge === 9) {
         game.gamespeed = 1 / 99999
     } else {
         game.gamespeed = (2 * reward_scaling) ** game.collapse_complete[2]
 
-        if (game.antispice_bought[7]) game.gamespeed = game.gamespeed ** 1.5
+        if (game.antispice_bought[7]) game.gamespeed = game.gamespeed ** 1.75
     }
 
     game.total_time_played += 1 / delta_time
