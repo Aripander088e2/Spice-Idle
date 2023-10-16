@@ -8,8 +8,8 @@ BigInt.prototype.toJSON = function () {
 let game = {
     version: "1.6.5",
 
-    tickspeed: 100,
-    gamespeed: 1,
+    tickspeed: 200,
+    gamespeed: 2,
 
     notation: 2,
     hotkeys: true,
