@@ -38,11 +38,11 @@ let game = {
     ],
     red_spice_price: [
         new Decimal(5),
-        new Decimal(150),
-        new Decimal(30000),
-        new Decimal(4.5 * 10 ** 8),
-        new Decimal(6 * 10 ** 13),
-        new Decimal(9 * 10 ** 20),
+        new Decimal(75),
+        new Decimal(10000),
+        new Decimal(4.5 * 10 ** 6),
+        new Decimal(6 * 10 ** 9),
+        new Decimal(9 * 10 ** 15),
     ],
     red_spice_bought: [0n, 0n, 0n, 0n, 0n, 0n],
     red_spice_boost: [
