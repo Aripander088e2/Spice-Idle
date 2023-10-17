@@ -7,7 +7,7 @@ function buy_gen(color, id, budget) {
                     game.red_spice.sub(game.red_spice_price[id]),
                     0
                 )
-                game.red_spice_price[id] = game.red_spice_price[id].mul(1.2)
+                game.red_spice_price[id] = game.red_spice_price[id].mul(1.12)
                 game.red_spice_gen[id] = game.red_spice_gen[id].add(1)
                 game.red_spice_bought[id] += 1n
 
@@ -35,8 +35,8 @@ function buy_gen(color, id, budget) {
                     0
                 )
                 game.yellow_spice_price[id] =
-                    game.yellow_spice_price[id].mul(1.3)
-                game.yellow_spice_gen[id] = game.yellow_spice_gen[id].add(1)
+                    game.yellow_spice_price[id].mul(1.14)
+                game.yellow_spice_gen[id] = game.yellow_spice_gen[id].add(4)
                 game.yellow_spice_bought[id] += 1n
 
                 let yellow_bought = game.yellow_spice_bought[id] / 10n + 1n
@@ -63,8 +63,8 @@ function buy_gen(color, id, budget) {
                     game.green_spice.sub(game.green_spice_price[id]),
                     0
                 )
-                game.green_spice_price[id] = game.green_spice_price[id].mul(1.4)
-                game.green_spice_gen[id] = game.green_spice_gen[id].add(1)
+                game.green_spice_price[id] = game.green_spice_price[id].mul(1.16)
+                game.green_spice_gen[id] = game.green_spice_gen[id].add(4)
                 game.green_spice_bought[id] += 1n
 
                 let green_bought = game.green_spice_bought[id] / 10n + 1n
@@ -91,8 +91,8 @@ function buy_gen(color, id, budget) {
                     game.blue_spice.sub(game.blue_spice_price[id]),
                     0
                 )
-                game.blue_spice_price[id] = game.blue_spice_price[id].mul(1.5)
-                game.blue_spice_gen[id] = game.blue_spice_gen[id].add(1)
+                game.blue_spice_price[id] = game.blue_spice_price[id].mul(1.18)
+                game.blue_spice_gen[id] = game.blue_spice_gen[id].add(4)
                 game.blue_spice_bought[id] += 1n
 
                 let blue_bought = game.blue_spice_bought[id] / 10n + 1n
@@ -118,8 +118,8 @@ function buy_gen(color, id, budget) {
                     game.pink_spice.sub(game.pink_spice_price[id]),
                     0
                 )
-                game.pink_spice_price[id] = game.pink_spice_price[id].mul(1.6)
-                game.pink_spice_gen[id] = game.pink_spice_gen[id].add(1)
+                game.pink_spice_price[id] = game.pink_spice_price[id].mul(1.2)
+                game.pink_spice_gen[id] = game.pink_spice_gen[id].add(4)
                 game.pink_spice_bought[id] += 1n
 
                 let pink_bought = game.pink_spice_bought[id] / 10n + 1n
