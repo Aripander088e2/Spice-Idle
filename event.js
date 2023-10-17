@@ -8,7 +8,7 @@ function buy_gen(color, id, budget) {
                     0
                 )
                 game.red_spice_price[id] = game.red_spice_price[id].mul(1.12)
-                game.red_spice_gen[id] = game.red_spice_gen[id].add(1)
+                game.red_spice_gen[id] = game.red_spice_gen[id].add(4)
                 game.red_spice_bought[id] += 1n
 
                 let red_bought = game.red_spice_bought[id] / 10n + 1n
