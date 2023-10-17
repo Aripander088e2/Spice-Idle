@@ -490,7 +490,7 @@ function buy_strengthener(color) {
                         game.red_strengthener_price.mul(
                             Decimal.pow(a, game.red_strengthener - 24)
                         )
-                game.red_strengthener += 1
+                game.red_strengthener += 3
 
                 if (game.red_spice.cmp(0) < 0) game.red_spice = new Decimal(0)
             }
@@ -508,7 +508,7 @@ function buy_strengthener(color) {
                         game.yellow_strengthener_price.mul(
                             Decimal.pow(a, game.yellow_strengthener - 24)
                         )
-                game.yellow_strengthener += 1
+                game.yellow_strengthener += 3
 
                 if (game.yellow_spice.cmp(0) < 0)
                     game.yellow_spice = new Decimal(0)
@@ -527,7 +527,7 @@ function buy_strengthener(color) {
                         game.green_strengthener_price.mul(
                             Decimal.pow(a, game.green_strengthener - 24)
                         )
-                game.green_strengthener += 1
+                game.green_strengthener += 3
 
                 if (game.green_spice.cmp(0) < 0)
                     game.green_spice = new Decimal(0)
@@ -546,7 +546,7 @@ function buy_strengthener(color) {
                         game.blue_strengthener_price.mul(
                             Decimal.pow(a, game.blue_strengthener - 24)
                         )
-                game.blue_strengthener += 1
+                game.blue_strengthener += 3
 
                 if (game.blue_spice.cmp(0) < 0) game.blue_spice = new Decimal(0)
             }
@@ -564,7 +564,7 @@ function buy_strengthener(color) {
                         game.pink_strengthener_price.mul(
                             Decimal.pow(a, game.pink_strengthener - 24)
                         )
-                game.pink_strengthener += 1
+                game.pink_strengthener += 3
 
                 if (game.pink_spice.cmp(0) < 0) game.pink_spice = new Decimal(0)
             }
