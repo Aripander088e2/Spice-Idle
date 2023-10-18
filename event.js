@@ -9,12 +9,12 @@ function buy_gen(color, id, budget) {
                 )
                 game.red_spice_price[id] = game.red_spice_price[id].mul(1.12)
                 game.red_spice_gen[id] = game.red_spice_gen[id].add(4)
-                game.red_spice_bought[id] += 1n
+                game.red_spice_bought[id] += 4n
 
-                let red_bought = game.red_spice_bought[id] / 10n + 1n
+                let red_bought = game.red_spice_bought[id] / 1n + 1n
                 game.red_spice_boost[id] = new Decimal(
                     red_bought.toString()
-                ).pow(game.prestige_bought[3] + 1)
+                ).pow(game.prestige_bought[3] + 0.1)
                 if (
                     game.ascend_challenge === 1 ||
                     game.ascend_challenge === 6 ||
@@ -37,12 +37,12 @@ function buy_gen(color, id, budget) {
                 game.yellow_spice_price[id] =
                     game.yellow_spice_price[id].mul(1.14)
                 game.yellow_spice_gen[id] = game.yellow_spice_gen[id].add(4)
-                game.yellow_spice_bought[id] += 1n
+                game.yellow_spice_bought[id] += 4n
 
-                let yellow_bought = game.yellow_spice_bought[id] / 10n + 1n
+                let yellow_bought = game.yellow_spice_bought[id] / 1n + 1n
                 game.yellow_spice_boost[id] = new Decimal(
                     yellow_bought.toString()
-                ).pow(game.prestige_bought[3] + 1)
+                ).pow(game.prestige_bought[3] + 0.1)
                 if (
                     game.ascend_challenge === 1 ||
                     game.ascend_challenge === 6 ||
@@ -65,7 +65,7 @@ function buy_gen(color, id, budget) {
                 )
                 game.green_spice_price[id] = game.green_spice_price[id].mul(1.16)
                 game.green_spice_gen[id] = game.green_spice_gen[id].add(4)
-                game.green_spice_bought[id] += 1n
+                game.green_spice_bought[id] += 4n
 
                 let green_bought = game.green_spice_bought[id] / 10n + 1n
                 game.green_spice_boost[id] = new Decimal(
@@ -93,7 +93,7 @@ function buy_gen(color, id, budget) {
                 )
                 game.blue_spice_price[id] = game.blue_spice_price[id].mul(1.18)
                 game.blue_spice_gen[id] = game.blue_spice_gen[id].add(4)
-                game.blue_spice_bought[id] += 1n
+                game.blue_spice_bought[id] += 4n
 
                 let blue_bought = game.blue_spice_bought[id] / 10n + 1n
                 game.blue_spice_boost[id] = new Decimal(
@@ -120,7 +120,7 @@ function buy_gen(color, id, budget) {
                 )
                 game.pink_spice_price[id] = game.pink_spice_price[id].mul(1.2)
                 game.pink_spice_gen[id] = game.pink_spice_gen[id].add(4)
-                game.pink_spice_bought[id] += 1n
+                game.pink_spice_bought[id] += 4n
 
                 let pink_bought = game.pink_spice_bought[id] / 10n + 1n
                 game.pink_spice_boost[id] = new Decimal(
@@ -147,12 +147,12 @@ function buy_gen(color, id, budget) {
                 )
                 game.crystal_spice_price[id] =
                     game.crystal_spice_price[id].mul(2)
-                game.crystal_spice_gen[id] = game.crystal_spice_gen[id].add(1)
-                game.crystal_spice_bought[id] += 1n
+                game.crystal_spice_gen[id] = game.crystal_spice_gen[id].add(4)
+                game.crystal_spice_bought[id] += 4n
 
-                let crystal_bought = game.crystal_spice_bought[id] / 5n
+                let crystal_bought = game.crystal_spice_bought[id] / 1n
                 game.crystal_spice_boost[id] = Decimal.pow(
-                    2,
+                    0.2,
                     crystal_bought.toString()
                 )
             }
