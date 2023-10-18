@@ -146,7 +146,7 @@ function buy_gen(color, id, budget) {
                     0
                 )
                 game.crystal_spice_price[id] =
-                    game.crystal_spice_price[id].mul(2)
+                    game.crystal_spice_price[id].mul(1.25)
                 game.crystal_spice_gen[id] = game.crystal_spice_gen[id].add(4)
                 game.crystal_spice_bought[id] += 4n
 
